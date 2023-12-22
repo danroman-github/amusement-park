@@ -8,7 +8,7 @@
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Аттракцион</dataPath>
-			<field>Аттракцион</field>
+			<field>ВидАттракциона</field>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
