@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d98863b9-4857-47ee-9398-6c6c256da8e6">
+  <producedTypes>
+    <objectType typeId="475fe62b-24be-4bd4-aea6-a45414501c48" valueTypeId="b2d439e1-0bd7-459b-8904-dc0b6b6b1f15"/>
+    <refType typeId="bb223801-d6bc-414a-a191-c85bb89839b3" valueTypeId="62358bfb-6d9c-46a6-a56d-5c3ede199a58"/>
+    <selectionType typeId="f941d785-7220-4ef3-a3b9-868676b050fe" valueTypeId="1c75f640-d406-4fc3-b829-b3026949fceb"/>
+    <listType typeId="7cbf36f1-1fe6-4caa-a0ea-42991e542ac8" valueTypeId="09856777-e71d-4252-b25d-e5a002192719"/>
+    <managerType typeId="fb221383-c296-4712-80c3-ef5a42fd4dd1" valueTypeId="22126cb7-2964-415b-b7eb-dcdfa13c744f"/>
+  </producedTypes>
+  <name>Клиенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Клиенты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Клиенты.Attribute.Телефон</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Клиент</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="3d24de9d-203a-4164-9e9f-f3c00d63bce6">
+    <name>Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
