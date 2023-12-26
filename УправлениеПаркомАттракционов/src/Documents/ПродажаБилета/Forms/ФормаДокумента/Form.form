@@ -299,8 +299,8 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Скидка</name>
-      <id>21</id>
+      <name>БаллыКСписанию</name>
+      <id>28</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -311,11 +311,11 @@
       </dataPath>
       <handlers>
         <event>OnChange</event>
-        <name>СкидкаПриИзменении</name>
+        <name>БаллыКСписаниюПриИзменении</name>
       </handlers>
       <extendedTooltip>
-        <name>СкидкаРасширеннаяПодсказка</name>
-        <id>23</id>
+        <name>БаллыКСписаниюРасширеннаяПодсказка</name>
+        <id>30</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -329,8 +329,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>СкидкаКонтекстноеМеню</name>
-        <id>22</id>
+        <name>БаллыКСписаниюКонтекстноеМеню</name>
+        <id>29</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
