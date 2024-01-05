@@ -112,8 +112,12 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
-          <name>ПозицииПродажиНоменклатура</name>
+          <name>ПозицииПродажиСсылка</name>
           <id>17</id>
+          <title>
+            <key>ru</key>
+            <value>Номенклатура</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -127,7 +131,7 @@
             <name>ПозицииПродажиНоменклатураПриИзменении</name>
           </handlers>
           <extendedTooltip>
-            <name>ПозицииПродажиНоменклатураРасширеннаяПодсказка</name>
+            <name>ПозицииПродажиСсылкаРасширеннаяПодсказка</name>
             <id>19</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -142,7 +146,7 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>ПозицииПродажиНоменклатураКонтекстноеМеню</name>
+            <name>ПозицииПродажиСсылкаКонтекстноеМеню</name>
             <id>18</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -645,8 +649,12 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
-          <name>СписокНоменклатурыНоменклатура</name>
+          <name>СписокНоменклатурыСсылка</name>
           <id>79</id>
+          <title>
+            <key>ru</key>
+            <value>Номенклатура</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -656,7 +664,7 @@
             <segments>СписокНоменклатуры.Номенклатура</segments>
           </dataPath>
           <extendedTooltip>
-            <name>СписокНоменклатурыНоменклатураРасширеннаяПодсказка</name>
+            <name>СписокНоменклатурыСсылкаРасширеннаяПодсказка</name>
             <id>81</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -671,8 +679,55 @@
             </extInfo>
           </extendedTooltip>
           <contextMenu>
-            <name>СписокНоменклатурыНоменклатураКонтекстноеМеню</name>
+            <name>СписокНоменклатурыСсылкаКонтекстноеМеню</name>
             <id>80</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СписокНоменклатурыРодитель</name>
+          <id>100</id>
+          <enabled>true</enabled>
+          <userVisible/>
+          <dataPath xsi:type="form:DataPath">
+            <segments>СписокНоменклатуры.Parent</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>СписокНоменклатурыРодительРасширеннаяПодсказка</name>
+            <id>102</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СписокНоменклатурыРодительКонтекстноеМеню</name>
+            <id>101</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
@@ -1495,6 +1550,12 @@
     </edit>
     <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
       <segments>СписокНоменклатуры.ЭтоГруппа</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокНоменклатуры.Номенклатура</segments>
+    </notDefaultUseAlwaysAttributes>
+    <notDefaultUseAlwaysAttributes xsi:type="form:DataPath">
+      <segments>СписокНоменклатуры.Родитель</segments>
     </notDefaultUseAlwaysAttributes>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
