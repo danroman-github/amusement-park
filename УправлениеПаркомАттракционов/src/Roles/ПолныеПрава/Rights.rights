@@ -136,9 +136,5 @@
 			<name>InteractiveOpenExtReports</name>
 			<value>false</value>
 		</right>
-		<right>
-			<name>InteractiveOpenExtDataProcessors</name>
-			<value>false</value>
-		</right>
 	</object>
 </Rights>
