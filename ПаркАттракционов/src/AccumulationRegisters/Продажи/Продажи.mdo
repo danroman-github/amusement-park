@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea79a755-ac5f-41c1-acf4-09485dc2e1da">
+  <producedTypes>
+    <selectionType typeId="5bfd4769-3c79-45ac-917a-189de42c3c50" valueTypeId="2b93e121-e241-40a3-8247-b516e5920911"/>
+    <listType typeId="efb2acad-a48a-4c79-890e-78e3eebc459c" valueTypeId="5fa23449-1679-4de4-a562-2bc834efd860"/>
+    <managerType typeId="95ea94f5-4596-49c5-a03b-080fb63b5a8c" valueTypeId="9c6d51e1-a412-4ec3-9659-e92fc6b468e9"/>
+    <recordSetType typeId="35abc43c-8c7f-48a5-83ef-b42f1acc34b3" valueTypeId="c016e76b-80b2-4404-b86e-d347b66eb234"/>
+    <recordKeyType typeId="67eb85d8-d19d-4941-bc22-fdf14096ce5c" valueTypeId="581351b3-1b99-499b-9b14-7e99ab5749d6"/>
+    <recordType typeId="7354ba6c-8b3b-4ce5-90da-1781d464545f" valueTypeId="26189126-f419-48b2-aa14-68662f46f991"/>
+  </producedTypes>
+  <name>Продажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="22a886c1-4c73-4a0e-a85f-91ccf56820a0">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="a77ae616-f7b9-4436-b28d-795cd95504ab">
+    <name>Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Клиенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7e436803-0993-4ec5-b13b-450c41533982">
+    <name>ВидАттракциона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид аттракциона</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыАттракционов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="09a35d2a-5c1a-446c-9bf5-7767ca2a8509">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
